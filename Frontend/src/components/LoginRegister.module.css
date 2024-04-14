@@ -1,0 +1,235 @@
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 75vh;
+    height: auto;
+    margin: 30px auto;
+}
+
+
+
+/* Forms and Inputs */
+.formContainer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    width: 50%; 
+}
+
+.form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.loginRegisterInput {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+/* Buttons */
+.loginRegisterButton {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.loginRegisterButton.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.forgotPassword {
+    margin-top: 1rem; 
+    text-decoration: none;
+    color: #333333;
+  }
+
+  .forgotPassword:hover {
+    text-decoration: underline;
+  }
+ 
+
+/* Overlay Styles */
+.overlayContainer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: #FF416C;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlayPanel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.signInContainer {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    transform: translateX(0);
+  }
+  
+ 
+
+/* Toggle classes */
+.rightPanelActive .signInContainer {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.rightPanelActive .signUpContainer {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Overlay adjustments */
+.rightPanelActive .overlayContainer {
+    transform: translateX(-100%);
+}
+
+.rightPanelActive .overlay {
+    transform: translateX(50%);
+}
+
+/* Social Buttons */
+.socialContainer {
+    margin: 10px 0;
+}
+
+.socialContainer a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+.errorMessage {
+    color: firebrick; 
+    font-size: 0.8rem;
+    margin-top: 1px; 
+  }
+
+
+
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .form-container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    
+      .sign-in-container,
+      .sign-up-container {
+        order: 2;
+        margin-bottom: 10px;
+      }
+    
+      .overlay-container {
+        display: none;
+      }
+    
+      .container.right-panel-active .sign-in-container,
+      .container.right-panel-active .sign-up-container {
+        transform: translateX(0);
+      }
+      .loginRegisterInput {
+        width: 100%;
+        height: 20px;
+      }
+    
+      .loginRegisterButton {
+        padding: 10px; 
+        width: 100%; 
+      }
+    
+      h1, p, span {
+        font-size: 14px;
+      }
+
+      .socialContainer a {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+
+    .signInOption {
+      font-size: 0.7em; 
+    }
+
+    .errorMessage {
+      font-size: 0.7rem; 
+      
+    }
+ }
+    
+  
+    
+     
+     
+
+  

@@ -1,0 +1,70 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #f0f0f0;
+    margin-bottom: -30px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messageRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .messageBox {
+    margin-top: 20px;
+  }
+  
+  .successContainer {
+    text-align: center;
+  }
+  
+  .thankYouImage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .hrContainer hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+  
+  .thankYouTitle {
+    margin-top: 20px;
+  }
+  
+  .confirmationBox {
+    margin-top: 20px;
+  }
+  
+  .backToShopButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .backToShopButton:hover {
+    background-color: #218838;
+  }

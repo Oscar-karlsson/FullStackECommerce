@@ -1,0 +1,109 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .title {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .intro, .info {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .subTitle {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .submitButton {
+    background-color: #4CAF50; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049; 
+  }
+  
+  .submissionMessage {
+    color: firebrick;
+    margin-top: 20px;
+  }
+
+  .sectionTitle {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionContent {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .link {
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #666; 
+  }

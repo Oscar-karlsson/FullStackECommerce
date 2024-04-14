@@ -1,0 +1,248 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-navbar-footer-bg); 
+}
+
+.topRow, .bottomRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.searchBar {
+  flex-grow: 1;
+  margin:  0 2rem;
+}
+
+.navbarIcons {
+  margin-right: 2rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.7rem;
+  color:  var(--color-navbar-icons);
+}
+
+
+
+.navbarIcons > * {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbarIcons > *:hover {
+  color: var(--color-navbar-icons-hover); 
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.cartItemCount {
+  position: absolute;
+  top: -0.75rem; 
+  right: -0.75rem; 
+  background-color: var(--color-cart-badge-bg);
+  color: var(--color-cart-badge-text);
+  border-radius: 50%;
+  font-size: 0.4em;
+  padding: 0.1875rem; 
+  width: 1.375rem; 
+  height: 1.375rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: var(--color-navbar-icons);
+}
+
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 3px);
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbarLinks {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-medium);
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  
+}
+
+.navbarLinks a {
+  display: block;
+  color: var(--color-navbar-link);
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbarLinks a:hover {
+  color: var(--color-navbar-link-hover);
+  transform: scale(1.01);
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+.searchBar {
+  margin: 0 1rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .topRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+
+  .navbarLinks {
+    display: none;
+  }
+
+  .logo {
+    max-width: 50px; 
+    max-height: 50px;
+    margin-left: 0;
+  
+  }
+  
+  .hamburger {
+    margin-left: -1rem;
+  }
+  .navbarIcons {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .cartItemCount {
+    top: -0.5rem; 
+    right: -0.5rem; 
+    font-size: 0.6em; 
+    padding: 0.125rem; 
+    width: 1rem; 
+    height: 1rem; 
+  }
+
+  .searchBar {
+    width: 100%;
+    order: 2; /* Search bar below top row */
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 1; /* Hamburger next to icons */
+  }
+
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rightSide {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarLinks {
+    position: fixed; 
+    top: 16.6vh; 
+    right: -100%; 
+    width: 45%; 
+    height: 100%; 
+    background: var(--color-navbar-footer-bg);
+    display: flex; 
+    flex-direction: column; 
+    transition: right 0.3s ease-out; 
+    z-index: 20;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 1.5rem;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+    direction: rtl; 
+  }
+
+  .navbarLinks a {
+    direction: ltr; 
+  }
+
+  .navbarLinks::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    width: 0;
+  }
+  .navbarLinks:hover::-webkit-scrollbar {
+    width: 10px; /* Show the scrollbar when the user hovers over the element */
+  }
+  
+  
+  .navbarLinks::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  .navbarLinks::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.7); /* Set the color of the scrollbar thumb */
+    border-radius: 20px; /* Make the scrollbar thumb rounded */
+    border: 3px solid transparent; /* Add a border to the scrollbar thumb */
+  }
+  }
+
+  .showMenu {
+    transform: translateX(0);
+    display: flex;
+    right: 0;
+  }

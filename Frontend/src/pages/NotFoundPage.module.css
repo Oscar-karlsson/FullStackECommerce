@@ -1,0 +1,47 @@
+.pageNotFound {
+  padding: 40px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+}
+
+.backgroundImage {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.backgroundImage h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.contentBox h3 {
+  font-size: 80px;
+  text-align: center;
+}
+
+
+.text {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.homeLink {
+  color: #fff!important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contentBox {
+  margin-top: -50px;
+}
